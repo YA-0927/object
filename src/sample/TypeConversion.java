@@ -1,4 +1,4 @@
-package basic.sample;
+package sample;
 
 //型変換の見本
 public class TypeConversion {

@@ -23,7 +23,7 @@ class Human {
     }
     //フィールド
     protected String name;
-
+    //コンストラクタ
     public Human(String name) {
         this.name = name;
     }

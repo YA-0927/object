@@ -10,6 +10,8 @@ public class FigureSample {
         };
 
         for (Figure figure:figures) {
+            //System.out.println(figure.getArea());
+            //上のように書くこともできるがこれは面積しか出てこない
             System.out.println(figure);
         }
     }

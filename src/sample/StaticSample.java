@@ -1,4 +1,4 @@
-package basic.sample;
+package sample;
 
 class StaticSample {
 

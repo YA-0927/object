@@ -6,11 +6,11 @@ package basic.human3;
 class Japanese extends Human{
 
     public Japanese(String name) {
-        super(name);
+        super(name);//superクラスそのものを呼び出している。『Human(name)』の意味（これは書いたらコンパイルエラーになる）
 
         /*
         human(name)と同じ、自分のクラスのインスタンスとして利用可能。
-        継承してもコンストラクトは必要。
+        継承してもコンストラクタは必要。
         コンストラクタと一致している部分に関しては継承として利用可能。
          */
     }
