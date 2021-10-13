@@ -19,5 +19,6 @@ class Circle {
     public String toString() {
         return String.format("円 半径:%.2f 面積:%.2f",
                 radius,getArea());
+        //getRadiusって使うことできる
     }
 }
