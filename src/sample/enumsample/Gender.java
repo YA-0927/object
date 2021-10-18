@@ -6,7 +6,7 @@ public enum Gender {
     //（列挙）定数は大文字で書くのは暗黙の了解
     MEN("男"),
     WOMEN("女");
-    //swich文を列挙型を書くこともある
+    //switch文を列挙型を書くこともある
 
     private String jpName;
 
