@@ -22,7 +22,5 @@ public class FigureSample {
             //上のように書くこともできるがこれは面積しか出てこない
             System.out.println(figure);
         }
-
-
     }
 }
