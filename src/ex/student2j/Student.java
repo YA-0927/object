@@ -1,12 +1,24 @@
-package ex.student2;
-
-import sample.enumsample.Gender;
+package ex.student2j;
 
 //学生クラス
 class Student {
+
+    //列挙型性別
+    enum Gender{
+        MEN("男"),
+        WOMEN("女");
+
+        private String jpName;
+
+        Gender(String jpName) {
+            this.jpName = jpName;
+        }
+    }
+
+
     //フィールド
     private String name;//名前
-    private Gender gender;//性別
+    private Gender gender;
     private int jap;//国語の得点
     private int math;//数学の得点
     private int eng;//英語の得点
@@ -41,18 +53,12 @@ class Student {
         return eng;
     }
 
-    /**
-     * テストの個人合計を求める
-     * @return int 国語・数学・英語の合計点
-     */
+    //個人合計
     public int sum() {
         return jap + math + eng;
     }
 
-    /**
-     * テストの個人平均を求める
-     * @return double 国語・数学・英語の平均点
-     */
+    //個人平均
     public double ave() {
         return sum() / 3.0;
     }
@@ -60,8 +66,6 @@ class Student {
     @Override
     public String toString() {
         return String.format("%s %s %d %d %d %d %.2f"
-                ,name,gender.getJpName(),jap,math,eng,sum(),ave());
+                ,name,gender.jpName,jap,math,eng,sum(),ave());
     }
-
-
 }
