@@ -1,4 +1,4 @@
-package basic.inspection;
+package basic.inspectionj;
 
 import java.util.ArrayList;
 import java.util.Arrays;

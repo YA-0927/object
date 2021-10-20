@@ -1,4 +1,4 @@
-package basic.inspection;
+package basic.inspectionj;
 
 class Result {
     private String id;//検査を受けた人のID
