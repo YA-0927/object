@@ -14,7 +14,7 @@ class StaticSample {
         return x+y;
         }
 
-    public static void main(String[] args) {
+    public static void main(StringSample[] args) {
         System.out.println(StaticSample.add(10,20));//30
         int ans = add(100,50);
         System.out.println(ans);
