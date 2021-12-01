@@ -1,19 +1,19 @@
 package ex.inventory;
 
-public class PersonalComputer implements Constants {//PC情報
+public class PersonalComputer {//PC情報
 
     private String userName;
     private int pcNo;
     private int storageNo;
-    private int memory;
+    private int price;
     private int bit;
     private String OS;
 
-    public PersonalComputer(String userName, int pcNo, int storageNo, int memory, int bit, String OS) {
+    public PersonalComputer(String userName, int pcNo, int storageNo, int price, int bit, String OS) {
         this.userName = userName;
         this.pcNo = pcNo;
         this.storageNo = storageNo;
-        this.memory = memory;
+        this.price = price;
         this.bit = bit;
         this.OS = OS;
     }
@@ -30,8 +30,8 @@ public class PersonalComputer implements Constants {//PC情報
         return storageNo;
     }
 
-    public int getMemory() {
-        return memory;
+    public int getPrice() {
+        return price;
     }
 
     public int getBit() {
@@ -45,6 +45,6 @@ public class PersonalComputer implements Constants {//PC情報
     @Override
     public String toString() {
         return String.format("%s %d %d %d %d %s",
-                userName,pcNo,storageNo,memory,bit,OS);
+                userName,pcNo,storageNo, price,bit,OS);
     }
 }
