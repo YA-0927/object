@@ -59,5 +59,35 @@ public class ViewStock {//在庫表示(倉庫の在庫管理)
             System.out.println("在庫内容：" + entry.getValue());
         }
 
+        //storagePriceMapから計算を行う
+        System.out.println("\n//倉庫ごとの合計金額");
+        for (Map.Entry entry : storagePriceMap.entrySet()){
+            double sum = 0; //合計を入れる変数を定義する
+            for (Integer i : (List<Integer>)entry.getValue()) {//これは「ListのInteger」と明示
+                sum += i;
+            }
+            System.out.println("倉庫番号"+entry.getKey()+";");
+            System.out.println("合計金額："+ sum +"円");
+        }
+        //合計台数を表示
+        System.out.println("\n//倉庫ごとの合計台数");
+        for (Map.Entry entry:storagePriceMap.entrySet()) {
+        int cnt = ((List)entry.getValue()).size(); //合計台数を保存する変数cnt,要素数をカウントするメソッド.size
+            System.out.println("倉庫番号"+entry.getKey()+";");
+            System.out.println("合計台数：" + cnt +"台");
+        }
+
+        //倉庫別に1台語との平均金額を表示
+        System.out.println("\n//倉庫内の一台ごとの平均金額");
+        for(Map.Entry entry:storagePriceMap.entrySet()){
+            double sum = 0;
+            double cnt = ((List)entry.getValue()).size(); //合計台数を保存する変数cnt,要素数をカウントするメソッド.size
+            for (Integer a : (List<Integer>)entry.getValue()){
+                sum += a;
+            }
+            double ave = sum / cnt;
+            System.out.println("倉庫番号："+ entry.getKey());
+            System.out.println("平均金額：" + ave + "円");
+        }
     }
 }
