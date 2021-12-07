@@ -17,7 +17,8 @@ class Kaprekar {
 
         //後判定繰り返し
         do {
-            tempNum = kaprekarNum;
+            tempNum = kaprekarNum; //繰り返しに使用する為代入
+
             //4桁の数値をそれぞれ分割
             String str = Integer.toString(tempNum);
             String[] arrayStr = str.split("");
